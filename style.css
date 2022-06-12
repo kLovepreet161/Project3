@@ -1,0 +1,133 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+   
+}
+.cards{
+    width: 375px; 
+    border-radius: 20px; 
+    display: grid;
+    justify-content: center;
+    align-items: center;  
+}
+.image-container{
+    position: relative;
+    padding: 39px 0 0 47px;
+}
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+    
+}
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 5px 48px;
+    margin-top: -11px;
+}
+.big{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight:700 ;
+    color:hsl(0, 0%, 95%);
+}
+.small{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:400 ;
+    margin-top: -16px;
+    line-height: 1.8;
+}
+.btn{
+    background-color: hsl(0, 0%, 95%);  
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+     margin: 7px 100px 45px 48px;
+     padding: 10px 30px;
+     font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:400 ;
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2{
+    color:  hsl(184, 100%, 22%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+}
+@media (min-width:900px) {
+    .cards{
+        height: 100%;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+   
+    }
+    .card-1{
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+}
+.card-3{
+    border-radius: 0 10px 10px 0;
+
+}
+.btn{
+    padding: 18px 50px;
+    margin: 80px 100px 60px 48px;
+  white-space: nowrap;
+  border-radius: 40px;
+}
+}
